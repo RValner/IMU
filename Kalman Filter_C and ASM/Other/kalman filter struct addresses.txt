@@ -1,0 +1,12 @@
+0    float angle;
+4    float rateBias;            // Bias of rate variable
+8    float angleRate;		// Rate of change of whatever input
+12    float dt;			// Timestep in seconds
+16-28    float P[2][2];         // Covariance matrix
+32 36    float K[2];            // Kalman gain
+40    float innovation, S;
+44    float Q_rateBias;		// Variance of rate bias estimation process noise
+48    float Q_angle;		// Variance of scalar estimation process noise
+52    float u_angle;		// Variance of scalar measurement
+
+
